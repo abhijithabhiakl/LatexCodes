@@ -1,16 +1,26 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc} % libraries / packages just like nodules in python
+\documentclass{article}     % libraries / packages just like modules in python
+\usepackage[utf8]{inputenc} % Or like Just like adding HEader files in C++
 %*******************
-\title{Heading}
-\author{Author: Abhijith S}
-\date{Date: October 2021}
+\usepackage{geometry}       % package used to define the layout of the document
+ 	\geometry
+ 		{
+ 			a4paper,        % To define the aspect ratio of the doc
+ 			%total={170mm,257mm},
+ 			left=25mm,
+ 			top=25mm,
+ 			right=20mm,
+ 			bottom=20mm,
+ 		}
+\title{Heading}             % Main heading of the document
+\author{Author: Abhijith S} % For specifying Author of the document
+\date{Date: October 2021}   % For specifying Date of the document
 %*******************
 %the section in between the stars makes 
 %up the title part 
 
 %the code till now is called preample
-\begin{document}
-%Beginning of document just like <html> tag
+
+\begin{document} %Beginning of document just like <html> tag
 
 \maketitle
 %title of the document / main heading
@@ -25,11 +35,58 @@
 This text would appear just from the left side below the introduction\\\\
 Let's Begin with a formula $e^{i\pi}+1 = 0$. 
 \newline
-But we ca also do 
+But we can also do 
 $$e =  \lim_{n\to\infty}\left(1+ \frac{1}{n}\right)^n = \lim_{n\to\infty}\frac{n}{\sqrt[n]{n!}}$$
 %we can code of formulas in between two dollar
 %signs
 we can do another: $$e = \sum_{n=0}^{\infty}\frac{1}{n!}$$
-For continued fractions:$$$$
+
+\section{Just another Section}
+     Just some text under this section 
+     \subsection{A subsection}
+Whatever code put in here would be shown as same as they are written:
+
+\begin{verbatim}
+  //Whatever code put in here would be shown as same as they are written
+    class _WeatherPageState extends State<WeatherPage> {
+  @override
+  void initState() {
+    getweather();
+    super.initState();
+  }
+
+  WeatherFactory wf = new WeatherFactory("9e8638e0e66018f75db6fc0ed9512f3b");
+  late Weather mylocation;
+  bool loading = true;
+  getweather() async {
+      await Geolocator.requestPermission();
+    print('gotlocation');
+\end{verbatim}
+\subsection{next subsection}
+Text under subsection:  
+putting some lorem ipsum to make it look like there is some text under this. 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+when an unknown printer took a galley of type and scrambled it to make a type 
+specimen book. It has survived not only five centuries, but also the leap into 
+electronic typesetting, remaining essentially unchanged. It was popularised in 
+the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+and more recently with desktop publishing software like Aldus PageMaker 
+including versions of Lorem Ipsum.
+\subsubsection{a sub sub section :)}
+
+It is a long established fact that a reader will be distracted by the readable 
+content of a page when looking at its layout. The point of using Lorem Ipsum is
+ that it has a more-or-less normal distribution of letters, as opposed to using 
+ 'Content here, content here', making it look like readable English. 
+ Many desktop publishing packages and web page editors now use Lorem Ipsum as 
+ their default model text, and a search for 'lorem ipsum' will uncover many 
+ web sites still in their infancy. Various versions have evolved over the years, 
+ sometimes by accident, sometimes on purpose (injected humour and the like).
+ \subsubsection{second sub sub section}
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 %end of the tag just like </html>
 \end{document}
