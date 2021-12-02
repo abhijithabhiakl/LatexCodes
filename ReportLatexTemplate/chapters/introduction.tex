@@ -1,0 +1,19 @@
+\chapter{Introduction}
+\pagenumbering{arabic}
+
+      Cancers of the brain are the consequence of abnormal growths of cells in the brain. Any brain tumour is inherently serious and life-threatening because of its invasive and infiltrative character in the limited space of the intracranial cavity. Each year about 19,000 people in the United States are diagnosed with primary brain cancers. Imaging plays a central role in the diagnosis of brain tumours. Computed Tomography (CT) has become a commonly performed procedure which is a noninvasive, safe, and well-tolerated one. The brain CT examines the various structures of the brain to look for a mass, stroke, area of bleeding, or blood vessel abnormality. Patients with benign gliomas may survive for many years, while survival in most cases of glioblastoma multiforme is limited to a few months after diagnosis if treatment is ignored (do nothing option), but cases are known of glioblastoma multiforme that have survived over 20 years and have a good quality of life after successful treatment. Earlier we diagnosis the disease, better will be the progress of the treatment    
+      
+       Computer-aided diagnosis (CAD) systems can help radiologists in interpreting brain CT for tumour detection and classification. The combination of CAD scheme and experts’ knowledge would greatly improve the detection and classification accuracy. This paper focuses on developing a novel CAD system for automatic tumour detection and classification using brain CT images, which involves four stages:
+\begin{itemize}
+
+
+       
+\item  Preprocessing: Sometimes the images are in low contrast. Image preprocessing suppresses noise and enhances the contrast between the suspicious areas and tissue background. 
+\item Segmentation: Segmentation is the process of dividing an image into nonoverlapping regions, such that each region
+is homogeneous but the union of any two neighbouring regions is inhomogeneous. In this paper, the Markov random field segmentation algorithm is adopted to locate the suspicious region from the preprocessed ROI (Region Of Interest) in stage 1. 
+\item Feature extraction and selection: In the proposed CAD system, we analyze and extract three kinds of features (textural, fractal and histogram-based features) from the suspicious areas and ROIs. Usually, a large amount of features are extracted and we need to select the significant ones from them. In this paper, we apply the stepwise regression method to select an optimal subset of features.
+\item Classification and evaluation: In this paper we propose a novel membership function and apply the resulted fuzzy support vector machine (FSVM) as the classification tool. 
+
+\end{itemize}
+
+Based on the optimal subset of features selected from step 3, the suspicious is classified as benign or malignant. Five objective measurements (accuracy, sensitivity, specificity, positive predictive value, and negative predictive value) are used to evaluate the classification results. The higher the five measurements are, the more reliable and valid the CAD system is. 

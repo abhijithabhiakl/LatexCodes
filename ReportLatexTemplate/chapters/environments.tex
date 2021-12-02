@@ -1,0 +1,118 @@
+\chapter{Environments}
+
+This chapter will show how different environments can be used within latex 
+\section{Table}
+
+
+This section will show how a table\ref{egtab} can be created 
+
+\begin{table}[h]
+\begin{center}
+\caption{Example of table}
+\label{egtab}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+  \textbf{cell1} & cell2 & cell3 \\ \hline 
+  cell4 & cell5 & cell6 \\ \hline
+  cell7 & cell8 & cell9 \\ 
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\section{equation}
+
+\LaTeX allows two writing modes for mathematical expressions: the inline mode and the display mode. The first one is used to write formulas that are part of a text. The second one is used to write expressions that are not part of a text or paragraph, and are therefore put on separate lines.
+\subsection{inline}
+Let's see an example of the inline mode: 
+
+The well known Pythagorean theorem \(x^2 + y^2 = z^2\) was 
+proved to be invalid for other exponents. 
+Meaning the next equation has no integer solutions:
+ 
+\[ x^n + y^n = z^n \]
+
+Let's see another example of the inline mode:
+
+In physics, the mass-energy equ
+ivalence is stated 
+by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
+
+
+Let's see another example of the inline mode:
+
+In physics, the mass-energy equ
+ivalence is stated 
+by the equation \begin{math} E=mc^2 \end{math}, discovered in 1905 by Albert Einstein.
+
+ 
+\subsection{displayed mode}
+The displayed mode has two versions: numbered and unnumbered.
+
+
+The mass-energy equivalence is described by the famous equation
+ 
+$$E=mc^2$$
+ 
+discovered in 1905 by Albert Einstein. 
+In natural units ($c$ = 1), the formula expresses the identity
+ 
+\begin{equation}
+\label{eq1}
+E=m
+\end{equation}
+
+
+
+\section{matrix}
+
+
+
+this section will describe how to write  a mtrix\\
+
+\begin{equation}
+\begin{bmatrix}
+    x_{11}       & x_{12} & x_{13} & \dots & x_{1n} \\
+    x_{21}       & x_{22} & x_{23} & \dots & x_{2n} \\
+    \hdotsfor{5} \\
+    x_{d1}       & x_{d2} & x_{d3} & \dots & x_{dn}
+\end{bmatrix}
+=
+\begin{bmatrix}
+    x_{11} & x_{12} & x_{13} & \dots  & x_{1n} \\
+    x_{21} & x_{22} & x_{23} & \dots  & x_{2n} \\
+    \vdots & \vdots & \vdots & \ddots & \vdots \\
+    x_{d1} & x_{d2} & x_{d3} & \dots  & x_{dn}
+\end{bmatrix}
+\end{equation}
+
+
+the equation\ref{eq1} 
+
+\section{ points}
+
+\subsection{bulleted}
+
+\begin{itemize}
+
+
+       
+\item  Preprocessing: Sometimes the images are in low contrast. Image preprocessing suppresses noise and enhances the contrast between the suspicious areas and tissue background. 
+\item Segmentation: Segmentation is the process of dividing an image into nonoverlapping regions, such that each region
+is homogeneous but the union of any two neighbouring regions is inhomogeneous. In this paper, the Markov random field segmentation algorithm is adopted to locate the suspicious region from the preprocessed ROI (Region Of Interest) in stage 1. 
+\item Feature extraction and selection: In the proposed CAD system, we analyze and extract three kinds of features (textural, fractal and histogram-based features) from the suspicious areas and ROIs. Usually, a large amount of features are extracted and we need to select the significant ones from them. In this paper, we apply the stepwise regression method to select an optimal subset of features.
+\item Classification and evaluation: In this paper we propose a novel membership function and apply the resulted fuzzy support vector machine (FSVM) as the classification tool. 
+
+\end{itemize}
+
+\subsection{numbered}
+\begin{enumerate}
+       
+\item  Preprocessing: Sometimes the images are in low contrast. Image preprocessing suppresses noise and enhances the contrast between the suspicious areas and tissue background. 
+\item Segmentation: Segmentation is the process of dividing an image into nonoverlapping regions, such that each region
+is homogeneous but the union of any two neighbouring regions is inhomogeneous. In this paper, the Markov random field segmentation algorithm is adopted to locate the suspicious region from the preprocessed ROI (Region Of Interest) in stage 1. 
+\item Feature extraction and selection: In the proposed CAD system, we analyze and extract three kinds of features (textural, fractal and histogram-based features) from the suspicious areas and ROIs. Usually, a large amount of features are extracted and we need to select the significant ones from them. In this paper, we apply the stepwise regression method to select an optimal subset of features.
+\item Classification and evaluation: In this paper we propose a novel membership function and apply the resulted fuzzy support vector machine (FSVM) as the classification tool. 
+
+\end{enumerate}
