@@ -1,5 +1,6 @@
 ## 1. Install Latex Compiler (Mictex for instance)
-	1.1 Run  "pdflatex --version" in cmd to verify the compiler installation.
+	1.1 add bin folder of installation to system path 
+        1.2 Run  "pdflatex --version" in cmd to verify the compiler installation.
 - The "Basic MiKTeX Installer" is used to set up a standard TeX/LaTeX system.
 
 ## 2. Install a Code editor or an IDE (VS code or Texmaker)
