@@ -1,0 +1,295 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage{framed}
+\usepackage{a4wide}
+\usepackage{float}
+
+%The below Section make chapter and its name to center of the page
+\usepackage{blindtext}
+\usepackage{xpatch}
+\makeatletter
+\xpatchcmd{\@makeschapterhead}{%
+  \Huge \bfseries  #1\par\nobreak%
+}{%
+  \Huge \bfseries\centering #1\par\nobreak%
+}{\typeout{Patched makeschapterhead}}{\typeout{patching of @makeschapterhead failed}}
+
+
+\xpatchcmd{\@makechapterhead}{%
+  \huge\bfseries \@chapapp\space \thechapter
+}{%
+  \huge\bfseries\centering \@chapapp\space \thechapter
+}{\typeout{Patched @makechapterhead}}{\typeout{Patching of @makechapterhead failed}}
+
+\makeatother
+%The above Section make chapter and its name to center of the page
+%\unwanted packages also included
+
+\linespread{1.5}
+%\pagestyle{fancy}
+%\fancyhead{}
+%\header and footer section
+%\renewcommand\headrulewidth{0.1pt}
+%\fancyhead[L]{\footnotesize \leftmark}
+%\fancyhead[R]{\footnotesize \thepage}
+%\renewcommand\headrulewidth{0pt}
+%\fancyfoot[R]{\small College of Engineering, Kidangoor}
+%\renewcommand\footrulewidth{0.1pt}
+%\fancyfoot[C]{2019 - 2020}
+%\fancyfoot[L]{\small Name of the project}
+
+
+
+
+\begin{document}
+\begin{center}
+{\Large \textbf{TITLE OF THE SEMINAR REPORT HERE}}\\
+\vspace{2cm}
+A SEMINAR REPORT\\
+\vspace{0.5cm}
+Submitted by \\
+\vspace{1cm}
+\textbf{NAME HERE}\\
+\vspace{0.2cm}
+\textbf{KTU-REG-NUM}\\
+\vspace{0.2cm} to\\
+
+
+ the A P J Abdul Kalam Technological University \\
+in partial fulfillment of the requirements for the award of the Degree \\
+of\\
+Bachelor of Technology \\
+in\\
+Electronics and Instrumentation Engineering
+\end{center}
+
+
+\begin{center}
+
+\vspace{1.2cm}
+
+%\includegraphics[scale=0.3]{CEK-emblem.jpg}
+
+DEPARTMENT OF ELECTRONICS \& INSTRUMENTATION ENGINEERING\\
+
+COLLEGE OF ENGINEERING KIDANGOOR\\
+
+MONTH YEAR\\
+\end{center}
+
+\thispagestyle{empty}
+\newpage
+%\Declaration in this page.
+\begin{center}
+\textbf{DECLARATION}\\
+\end{center}
+I hereby declare that the seminar report \textbf{“Title of seminar here”} , submitted for partial fulfillment of the requirements for the award of degree of Bachelor of Technology in Electronics and Instrumentation Engineering of the APJ Abdul Kalam Technological University, Kerala is a bonafide work done by me
+under supervision of <Name of the Project guide>. This submission represents my ideas in my own words and where ideas or words of others have been included, I have adequately and accurately cited and referenced the original sources. I also declare that I have adhered to ethics of academic honesty and integrity and have not misrepresented or fabricated any data or idea or fact or source in my submission. I understand that any violation of the above will be a cause for disciplinary action by the Institute and/or the University and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been obtained. This report has not been previously formed the basis for the award of any degree, diploma or similar title of any other University.
+
+\noindent \begin{minipage}{0.45\linewidth}
+\begin{flushleft}
+\vspace{1 cm}
+                         
+Place \\
+Date\\
+
+\end{flushleft} 
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\linewidth}
+\begin{flushright}                                      
+\vspace{1cm}
+                         
+Name of the student here\\
+
+
+\end{flushright} 
+\end{minipage}
+
+\thispagestyle{empty}
+
+\newpage
+\begin{center}
+
+%\vspace{1.5cm}
+
+\textbf{Department of Electronics and Instrumentation Engineering}
+
+\textbf{COLLEGE OF ENGINEERING KIDANGOOR}
+
+
+\textbf{academic year here}
+\end{center}
+\begin{center}
+% \includegraphics[scale=0.25]{CEK-emblem.jpg}
+
+\end{center}
+\vspace{0.2cm}
+\begin{center}
+ \textbf{CERTIFICATE}
+\end{center}
+
+This is to certify that the report entitled \textbf{ \large TITLE OF SEMINAR HERE} submitted by \textbf{NAME HARE}, to the APJ Abdul Kalam Technological University in partial fulfillment of the Bachelor of Technology degree in Electronics and Instrumentation Engineering is a bonafide record of the seminar work carried out by him/her under our guidance and supervision.
+\vspace{3cm}
+
+\noindent \begin{minipage}{0.45\linewidth}
+\begin{flushleft}
+\vspace{3cm}
+                         
+\textbf{Seminar Coordinator} \\
+\vspace{0.8cm}
+Mr. Vishnu Mohan \\
+\footnotesize{Assistant Professor\\
+Electronics and Instrumentation\\
+College of Engineering Kidangoor}\\
+
+\end{flushleft} 
+\end{minipage}
+\hfill
+\begin{minipage}{0.35\linewidth}
+\begin{flushleft}                                      
+\vspace{3cm}
+                         
+\textbf{Head of the Department} \\
+\vspace{.8cm}
+Dr. Tina P G\\
+\footnotesize{Assistant Professor\\
+Electronics and Instrumentation\\
+College of Engineering Kidangoor}\\
+
+
+\end{flushleft} 
+\end{minipage}
+\thispagestyle{empty}
+
+\newpage
+\chapter*{\centering \large ACKNOWLEDGEMENT\markboth{Acknowledgements}{Acknowledgements}}
+
+Type your acknowledgement hare
+
+
+
+\begin{flushright}
+\textbf{NAME HERE}
+\end{flushright}
+\thispagestyle{empty}
+
+
+% Please remove and edit percentage(%) Symbol, if you want this Acknowledgement page in your report. As per ktu guideline, this page is not necessary. 
+\begin{abstract}
+
+%\pagenumbering{roman}
+
+TYPE YOUR ABSTRACT HERE
+
+ 
+\end{abstract}
+\pagenumbering{roman}
+\tableofcontents %This command used for index.
+\listoffigures
+\listoftables
+\newpage
+\begin{center}
+  \textbf{ABBREVIATIONS} 
+  \end{center}
+  DMA \hspace{1cm}Direct Memory Access \newline
+  CEK \hspace{1cm}College of Engineering Kidangoor \newline
+
+\vspace{2cm}
+\begin{center}
+  \textbf{NOTATION} 
+  \end{center}
+Notation "space" Name of variable "space", unit\newline
+
+\thispagestyle{empty}
+
+
+
+    
+
+\chapter{FIRST CHAPTER}
+\pagenumbering{arabic}
+\section{Section One}
+write something for section one
+\subsection{First Subsection}
+write something here if u have a subsection and add subsections using the command \begin{verbatim}
+    \subsection{}
+\end{verbatim} 
+\section{Section Two}
+
+\chapter{SECOND CHAPTER}
+\section{Section Name}
+Write some text here. In the previous example there are different types of commands. For instance, \textbf will make boldface the text passed as parameter to the command. In mathematical mode there are special commands to display Greek characters. 
+
+\subsection{Another Subsection}
+The College of Engineering, Kidangoor (CEKGR) is a college in Kidangoor, Kottayam, Kerala, India. It is affiliated with the APJ Abdul Kalam Technological University and is recognized by the All India Council for Technical Education, New Delhi. It was founded in 2000-2001, as part of the Co-operative Academy of Professional Education (CAPE). CAPE was formed to establish educational institutions to provide education and training, research and development, and consultancy. The society is promoted by the Co-operation Department of the government of Kerala and is an autonomous society.
+
+The institution functions on a no-profit no-loss basis, a system upheld by the Supreme Court of India. The AICTE has given approval for the conduct of the courses. The state government has sanctioned the 5 B.Tech degree courses.
+
+Admission is through Central Counseling by the government of Kerala. Candidates are admitted based on the Common Entrance Examination\cite{ref1}.
+
+
+\begin{figure}[ht]
+\centering
+% \includegraphics[scale=0.5]{KidangoorCollege.jpg}
+\caption{Administrative Block}.
+\label{mainblock}
+\end{figure}
+
+\subsection{Equation}
+Equation  \ref{one} is an equation with number.
+\begin{equation}
+A = \frac{1}{2} m v^{2}
+\label{one}
+\end{equation}
+We can also write equation arrays using \textbf{eqnarray} function, as shown below.
+\begin{eqnarray}
+a = b \label{two}\\
+c_{\frac{m}{n}} = \sqrt{\frac{h \rho g}{2 \nu}} \label{three}
+\end{eqnarray}
+Eqn \ref{two} is a simple equation whereas eqn \ref{three} is slightly complicated.
+Equations can also be added in line with the text like this $a = \frac{m^2}{4}$ and without equation numbers as shown below (using \textbf{eqnarray*}):
+
+\begin{eqnarray*}
+a &=& b\\
+c_{\frac{m}{n}} &=& \sqrt{\frac{h \rho g}{2 \nu}} 
+\end{eqnarray*}
+Here you can see, the 'equal to' symbol can be aligned vertically with the help of \& symbol.
+
+\subsection{How can we add table?}
+In this table \ref{table1} table, you can see different options. Some fields are missing, horizontal line after the second row is missing. Try different options to write your table or you can use online table editors \cite{ref2}.
+
+
+\begin{table}[h]
+\begin{center}
+    
+\begin{tabular}{|c|c|c|}
+\hline
+    Roll No & Name of Student & KTU Register Number \\
+    \hline
+    1& Name 1&KGR17AE111 \\
+    \hline
+    &Name 2 & \\
+    & & KGR17AE000\\
+    \hline
+\end{tabular}
+\caption{My table}
+\label{table1}
+\end{center}
+\end{table}
+
+\chapter{NEXT CHAPTER}
+
+\chapter{CONCLUSION}
+
+
+
+
+\begin{thebibliography}{99}
+\bibitem{ref1} Wikipedia
+\bibitem{ref2} https://www.latex-tables.com/
+\end{thebibliography}
+\end{document}
