@@ -306,8 +306,8 @@ soft x-rays with wavelengths between 124 and 10 nm or
  photon energies between 10 eV and 124 eV. 
  The sun produces EUV; humans create it through 
  synchrotrons, or from plasma.
-Up until now, chip makers have used ultraviolet 
-(laser) light to project complex patterns onto
+Up until now, chip makers have used ultraviolet light to 
+project complex patterns onto
  silicon wafers coated with photoresist. In a process 
  analogous to the development of the old paper photos, 
  these patterns are developed and become conducting or 
@@ -335,32 +335,43 @@ turn drives the demand for the overall industry.
 that means that we've got to be able to cram in, 
 more and more
 functionality per square millimeter on a chip. all 
-the design and streets and every thing have to be 
-smaller in dimensions.
+the design and everything have to be smaller in dimensions.
 
 
-% \begin{figure}
-%   \centering
-%   \includegraphics[scale=0.3]{Moore's_Law_Transistor_Count.png}
-%   \caption{Moore's Law Transistor Count}
-%   \label{arch}
-%   \end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.3]{Moore's_Law_Transistor_Count.png}
+  \caption{Moore's Law Transistor Count}
+  \label{arch}
+  \end{figure}
 
 \section{Photolithography}
-Photolithography, also called optical lithography or UV lithography, is a process used in 
-microfabrication to pattern parts on a thin film or the bulk of a substrate (also called a wafer). 
-It uses light to transfer a geometric pattern from a photomask (also called an optical mask) to 
-a photosensitive (that is, light-sensitive) chemical photoresist on the substrate. A series of 
-chemical treatments then either etches the exposure pattern into the material or enables deposition 
-of a new material in the desired pattern upon the material underneath the photoresist
+Photolithography, also called optical lithography or UV lithography, 
+is a process used in 
+microfabrication to pattern parts on a thin film or the bulk of 
+a substrate (also called a wafer). 
+It uses light to transfer a geometric pattern from a photomask 
+(also called an optical mask) to 
+a photosensitive (that is, light-sensitive) chemical photoresist 
+on the substrate. A series of 
+chemical treatments then either etches the exposure pattern into 
+the material or enables deposition 
+of a new material in the desired pattern upon the material 
+underneath the photoresist
 
-This method can create extremely small patterns, down to a few tens of nanometers in size. 
-It provides precise control of the shape and size of the objects it creates and can create 
-patterns over an entire surface cost-effectively. It's main disadvantages are that it requires 
-a flat substrate to start with, it is not very effective at creating shapes that are not flat, 
+This method can create extremely small patterns, down to a few 
+tens of nanometers in size. 
+It provides precise control of the shape and size of the objects 
+it creates and can create 
+patterns over an entire surface cost-effectively. It's main 
+disadvantages are that it requires 
+a flat substrate to start with, it is not very effective at 
+creating shapes that are not flat, 
 and it can require extremely clean operating conditions. 
-Photolithography is commonly used to produce computer chips. When producing computer chips, 
-the substrate material is a resist covered wafer of silicon. This process allows hundreds of 
+Photolithography is commonly used to produce computer chips. 
+When producing computer chips, 
+the substrate material is a resist covered wafer of silicon. 
+This process allows hundreds of 
 chips to be simultaneously built on a single silicon wafer.
 
 
@@ -368,10 +379,11 @@ chips to be simultaneously built on a single silicon wafer.
 
 
 \section{Basic Concept}
-Major limitation comes from the laws of optics. 
-German physicist Ernst Abbe
- found that the resolution of a microscope d is 
- (roughly) limited to the 
+Major limitation in the lithography process comes from 
+the laws of optics. 
+German physicist Ernst Abbe found that the resolution 
+of a microscope d is 
+(roughly) limited to the 
 wavelength $\lambda$ of the light used in illumination:
 
 $$d =\lambda/(nsin(\alpha))$$
@@ -401,6 +413,52 @@ wavelengths to produce ever-smaller features. Beginning with UV
 
 \chapter{EUVL}
 \section{Introduction to EUVL}
+
+Optical projection lithography is the technology used to
+print the intricate patterns that define integrated circuits
+onto semiconductor wafers. Typically, a pattern on a
+mask is imaged, with a reduction of 4:1, by a highly
+accurate camera onto a silicon wafer coated with
+photoresist. Continued improvements in optical
+projection lithography have enabled the printing of ever
+finer features, the smallest feature size decreasing by
+about 30\% every two years. This, in turn, has allowed
+the integrated circuit industry to produce ever more
+powerful and cost-effective semiconductor devices. On
+average, the number of transistors in a state-of-the-art
+integrated circuit has doubled every 18 months.
+Currently, the most advanced lithographic tools used in
+high-volume manufacture employ deep-ultraviolet (DUV)
+radiation with a wavelength of 248 nm to print features
+that have line widths as small as 200 nm. It is believed
+that new DUV tools, presently in advanced development,
+that employ radiation that has a wavelength of 193 nm,
+will enable optical lithography to print features as small
+as 100 nm, but only with very great difficulty for highvolume manufacture. Over the next several years it will
+be necessary for the semiconductor industry to identify a
+new lithographic technology that will carry it into the
+future, eventually enabling the printing of lines as small
+as 30 nm. Potential successors to optical projection
+lithography are being aggressively developed. These are
+known as “Next-Generation Lithographies” (NGL's).
+EUV lithography (EUVL) is one of the leading NGL
+technologies; others include X-Ray lithography, ionbeam projection lithography, and electron-beam
+projection lithography.
+In many respects, EUVL may be viewed as a natural
+extension of optical projection lithography since it uses
+short wavelength radiation (light) to carry out projection
+imaging. In spite of this similarity, there are major
+differences between the two technologies. Most of these
+differences occur because the properties of materials in
+the EUV portion of the electromagnetic spectrum are
+very different from those in the visible and UV
+wavelength ranges. The purpose of this paper is to
+explain what EUVL is and why it is of interest, to
+describe the current status of its development, and to
+provide the reader with an understanding of the
+challenges that must be overcome if EUVL is to fulfill its
+promise in high-volume manufacture.
+
 EUVL technology is an advanced technology with a 
 light source of 13.5 nm, which is extremely short 
 wavelength and can be applied for beyond the 10 
@@ -451,15 +509,81 @@ X-ray lithography (XRL) with 1 nm wavelength
  node beyond 5 nm in future.
 
 \section{Why EUV ?}
-Lithography with 193 nanometer light has been 
-pushed further than many would 
-have thought possible, but it has come at a cost: 
-the industry has had to reach 
-deep into a bag of tricks to continue shrinking 
-chip features. Chipmakers will be 
-able to continue making smaller, faster and 
-more powerful chips while keeping 
-costs in check.
+
+In order to keep pace with the demand for the printing of
+ever smaller features, lithography tool manufacturers
+have found it necessary to gradually reduce the
+wavelength of the light used for imaging and to design
+imaging systems with ever larger numerical apertures.
+The reasons for these changes can be understood from
+the following equations that describe two of the most
+fundamental characteristics of an imaging system:
+resolution (RES) and depth of focus (DOF). These
+equations are usually expressed as
+
+$$RES = {k_1}{\lambda}/NA$$
+
+where l is the wavelength of the radiation used to carry
+out the imaging, and NA is the numerical aperture of the
+imaging system (or camera). These equations show that
+better resolution can be achieved by reducing l and
+increasing NA. The penalty for doing this, however, is
+that the DOF is decreased. Until recently, the DOF used
+in manufacturing exceeded 0.5 mm, which provided for
+sufficient process control.
+The case k1 = k2 = ½ corresponds to the usual definition
+of diffraction-limited imaging. In practice, however, the
+acceptable values for k1 and k2 are determined
+experimentally and are those values which yield the
+desired control of critical dimensions (CD’s) within a
+tolerable process window. Camera performance has a
+major impact on determining these values; other factors
+that have nothing to do with the camera also play a role.
+Such factors include the contrast of the resist being used
+and the characteristics of any etching processes used.
+Historically, values for k1 and k2 greater than 0.6 have
+been used comfortably in high-volume manufacture.
+Recently, however, it has been necessary to extend
+imaging technologies to ever better resolution by using
+smaller values for k1 and k2 and by accepting the need for
+tighter process control. This scenario is schematically
+diagrammed in Figure 1, where the values for k1 and
+DOF associated with lithography using light at 248 nm
+and 193 nm to print past, present, and future CD’s
+ranging from 350 nm to 100 nm are shown. The
+“Comfort Zone for Manufacture” corresponds to the
+region for which k1 > 0.6 and DOF > 0.5 mm. Also
+shown are the k1 and DOF values currently associated
+with the EUVL printing of 100 nm features, which will
+be explained later. As shown in the figure, in the very
+near future it will be necessary to utilize k1 values that
+are considerably less than 0.5. Problems associated with
+small k1 values include a large iso/dense bias (different
+conditions needed for the proper printing of isolated and
+dense features), poor CD control, nonlinear printing
+(different conditions needed for the proper printing of
+large and small features), and magnification of mask CD
+errors. Figure 1 also shows that the DOF values
+associated with future lithography will be uncomfortably
+small. Of course, resolution enhancement techniques
+such as phase-shift masks, modified illumination
+schemes, and optical proximity correction can be used to
+enhance resolution while increasing the effective DOF.
+However, these techniques are not generally applicable to
+all feature geometries and are difficult to implement in
+manufacturing. The degree to which these techniques
+can be employed in manufacturing will determine how
+far optical lithography can be extended before an NGL is
+needed.
+% Lithography with 193 nanometer light has been 
+% pushed further than many would 
+% have thought possible, but it has come at a cost: 
+% the industry has had to reach 
+% deep into a bag of tricks to continue shrinking 
+% chip features. Chipmakers will be 
+% able to continue making smaller, faster and 
+% more powerful chips while keeping 
+% costs in check.
 
 
 % \begin{figure}
@@ -484,7 +608,7 @@ EUV light.
  multilayers (consisting of 40 Mo/Si bilayers) that 
 act to reflect light by means of interlayer 
 interference; any one of these mirrors absorb
- around 30% 
+ around 30\% 
 of the incident light.
 }
 
@@ -599,37 +723,29 @@ produce even finer feature widths.
 % \end{figure}
 
 
-\chapter{EUVL mask}
-Within the IoBNT, Bio-NanoThings are expected to not only 
-communicate with each other, but
-also interact into networks, which will ultimately
-interface with the Internet. To this end, the definition of 
-network architectures and protocols on
-top of the aforementioned MC systems is an
-essential step for IoBNT development. A further
-challenge for the IoBNT is the interconnection
-of heterogeneous networks, i.e. composed of different types 
-of Bio-NanoThings and based on
-different MC systems. Finally, the realization of
-interfaces between the electrical domain of the
-Internet and the biochemical domain of the
-IoBNT networks will be the ultimate frontier to
-create a seamless interconnection between
-today’s cyber-world and the biological environment. Nano micro
- interface is mediating device between nano and
-micro scale communication; it is referred to as bio-cyber
-interface and bio electronics device throughout this article to 
-keep the generality. Basically, this device converts electrical
-signals received as commands from the medical server of
-healthcare providers into biochemical signals understandable
-by intra-body nanonetworks and vice versa.Bio-cyber interface is 
-the hybrid and most sophisticated
-device, that is capable of communicating between nanoscale and 
-microscale devices aggregated data from nanonetwork, processes 
-nanoscale data in its transduction unit to convert it into a 
-format suitable for the conventional network and sends it
-microscale devices. The components of envisioned bio-cyber 
-interfaces are transduction unit and communication unit.
+\section{EUVL mask}
+
+Photoresists are a critical part of lithography. Resists are 
+light-sensitive materials. 
+They form patterns on a surface when exposed to light. For EUV, 
+they are critical.
+The basic requirements for EUVL resist are sensitivity, 
+resolution, Line Width Roughness 
+(LWR) or Line Edge Roughness (LER), outgassing, a pattern 
+cross-sectional aspect ratio 
+and profile, etch resistance, defect density, and 
+reproducibility. Among them, 
+it is a critical challenge to meet the requirements 
+simultaneously on resolution, 
+LWR, and sensitivity (RLS). EUVL uses Chemically Amplified 
+Resist (CAR) due to 
+the advantages of high sensitivity and resolution, but its 
+LWR is relatively high, 
+which becomes a significant issue. For the 22 nm feature, 
+LWR should be 
+controlled below 2 nm, which is about half of the current 
+best available values
+
 \chapter{SECURITY IN IoBNT}
 The advent of skin implanted bio-electronics and the IoBNT 
 paradigm will not only open up a plethora of novel biomedical
