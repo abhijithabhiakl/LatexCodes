@@ -1,6 +1,6 @@
 ## 1. Install Latex Compiler (Mictex for instance)
 	1.1 add binary folder of installation to system path 
-		"C:\Users\BASIL\AppData\Local\Programs\MiKTeX\miktex\bin\x64\"
+		"C:\Users\abhijith\AppData\Local\Programs\MiKTeX\miktex\bin\x64\"
     1.2 Run  "pdflatex --version" in cmd to verify the compiler installation.
 - The "Basic MiKTeX Installer" is used to set up a standard TeX/LaTeX system.
 
