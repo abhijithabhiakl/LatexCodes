@@ -342,7 +342,7 @@ the design and everything have to be smaller in dimensions.
   \centering
   \includegraphics[scale=0.3]{Moore's_Law_Transistor_Count.png}
   \caption{Moore's Law Transistor Count}
-  \label{arch}
+  \label{moores}
   \end{figure}
 
 \section{Photolithography}
@@ -522,6 +522,7 @@ resolution (RES) and depth of focus (DOF). These
 equations are usually expressed as
 
 $$RES = {k_1}{\lambda}/NA$$
+$$DOF = {k_2}{\lambda}/(NA)^2 $$
 
 where l is the wavelength of the radiation used to carry
 out the imaging, and NA is the numerical aperture of the
@@ -531,9 +532,9 @@ increasing NA. The penalty for doing this, however, is
 that the DOF is decreased. Until recently, the DOF used
 in manufacturing exceeded 0.5 mm, which provided for
 sufficient process control.
-The case k1 = k2 = ½ corresponds to the usual definition
+The case $k_1$ = $k_2$ = $\frac{1}{2}$ corresponds to the usual definition
 of diffraction-limited imaging. In practice, however, the
-acceptable values for k1 and k2 are determined
+acceptable values for $k_1$ and $k_2$ are determined
 experimentally and are those values which yield the
 desired control of critical dimensions (CD’s) within a
 tolerable process window. Camera performance has a
@@ -541,29 +542,29 @@ major impact on determining these values; other factors
 that have nothing to do with the camera also play a role.
 Such factors include the contrast of the resist being used
 and the characteristics of any etching processes used.
-Historically, values for k1 and k2 greater than 0.6 have
+Historically, values for $k_1$ and $k_2$ greater than 0.6 have
 been used comfortably in high-volume manufacture.
 Recently, however, it has been necessary to extend
 imaging technologies to ever better resolution by using
-smaller values for k1 and k2 and by accepting the need for
+smaller values for $k_1$ and $k_2$ and by accepting the need for
 tighter process control. This scenario is schematically
-diagrammed in Figure 1, where the values for k1 and
+diagrammed in Figure~\ref{euv1}, where the values for $k_1$ and
 DOF associated with lithography using light at 248 nm
 and 193 nm to print past, present, and future CD’s
 ranging from 350 nm to 100 nm are shown. The
 “Comfort Zone for Manufacture” corresponds to the
-region for which k1 > 0.6 and DOF > 0.5 mm. Also
-shown are the k1 and DOF values currently associated
+region for which $k_1$ $>$ 0.6 and DOF $>$ 0.5 mm. Also
+shown are the $k_1$ and DOF values currently associated
 with the EUVL printing of 100 nm features, which will
 be explained later. As shown in the figure, in the very
-near future it will be necessary to utilize k1 values that
+near future it will be necessary to utilize $k_1$ values that
 are considerably less than 0.5. Problems associated with
-small k1 values include a large iso/dense bias (different
+small $k_1$ values include a large iso/dense bias (different
 conditions needed for the proper printing of isolated and
 dense features), poor CD control, nonlinear printing
 (different conditions needed for the proper printing of
 large and small features), and magnification of mask CD
-errors. Figure 1 also shows that the DOF values
+errors. Figure~\ref{euv1} also shows that the DOF values
 associated with future lithography will be uncomfortably
 small. Of course, resolution enhancement techniques
 such as phase-shift masks, modified illumination
@@ -575,6 +576,66 @@ manufacturing. The degree to which these techniques
 can be employed in manufacturing will determine how
 far optical lithography can be extended before an NGL is
 needed.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=1]{whyeuvl.png}
+  \caption{
+    \centering The $k_1$ and DOF values associated with 248
+  nm and 193 nm lithographies for the printing of CD
+  values ranging from 350 nm down to 100nm assuming
+  that $k_2 = k_1$ and NA = 0.6}
+  \label{euv1}
+  \end{figure}
+
+EUVL alleviates the foregoing problems by drastically
+decreasing the wavelength used to carry out imaging.
+Consider Figure~\ref{euv2}. The dashed black line shows the
+locus of points corresponding to a resolution of 100 nm;
+the region to the right of the line corresponds to even
+better resolution.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[scale=1]{whyeuvl2.png}
+  \caption{
+    \centering The region between the lines shows the
+    wavelength and numerical aperture of cameras
+    simultaneously having a resolution of 100 nm or better
+    and a DOF of 0.5 mm or better
+    }
+  \label{euv2}
+  \end{figure}
+
+  The solid red line shows the locus of points for which the
+DOF is 0.5 mm; in the region to the left of that line the
+DOF values are larger. Points in the region between the
+two lines correspond to situations in which the resolution
+is 100 nm or better, and the DOF is 0.5 mm or longer. As
+shown, to be in this favorable region, the wavelength of
+the light used for imaging must be less than 40 nm, and
+the NA of the imaging system must be less than 0.2. The
+solid circle shows the parameters used in current imaging
+experiments. Light having wavelengths in the spectral
+region from 40 nm to 1 nm is variously referred to as
+extreme uv, vacuum uv, or soft x-ray radiation.
+Projection lithography carried out with light in this
+region has come to be known as EUV lithography
+(EUVL). Early in the development of EUVL, the
+technology was called soft x-ray projection lithography
+(SXPL), but that name was dropped in order to avoid
+confusion with x-ray lithographyy, which is a 1:1, 
+near contact printing technology
+
+
+As explained above, EUVL is capable of printing features
+of 100 nm and smaller while achieving a DOF of 0.5 mm
+and larger. Currently, most EUVL work is carried out in
+a wavelength region around 13 nm using cameras that
+have an NA of about 0.1, which places the technology
+well within the “Comfort Zone for Manufacture” as
+shown in Figure 1 by the data point farthest to the right.
+
 % Lithography with 193 nanometer light has been 
 % pushed further than many would 
 % have thought possible, but it has come at a cost: 
