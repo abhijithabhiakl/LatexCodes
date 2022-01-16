@@ -3,12 +3,7 @@
 \usepackage{amsmath}        %AMS mathematical facilities for LaTeX
 \usepackage[utf8]{inputenc} % Or like Just like adding HEader files in C++
 %*******************
-\usepackage{geometry}
-\usepackage{pdfpages} 
-\usepackage[english]{babel} 
-\addto{\captionenglish}{
-  \renewcommand{\bibname}{References}
-}     % package used to define the layout of the document
+\usepackage{geometry}       % package used to define the layout of the document
  	\geometry
  		{
  			a4paper,        % To define the aspect ratio of the doc
@@ -29,9 +24,6 @@
 
 \begin{document} %Beginning of document just like <html> tag
 
-\centering
-\tableofcontents %This command used for index.
-\listoffigures
 \maketitle
   \LaTeX{} is a document preparation system for
   the \TeX{} typesetting program. It offers
@@ -95,9 +87,6 @@ Whatever code put in here would be shown as same as they are written:
       await Geolocator.requestPermission();
     print('gotlocation');
 \end{verbatim}
-
-\includepdf[scale=0.5, page={2,4}, offset=100 190]{smithcht}
-\includepdf[page={4}]{smithcht}
 \subsection{next subsection}
 Text under subsection:  
 putting some lorem ipsum to make it look like there is some text under this. 
@@ -121,34 +110,8 @@ content of a page when looking at its layout. The point of using Lorem Ipsum is
  sometimes by accident, sometimes on purpose (injected humour and the like).
  \subsubsection{second sub sub section}
 
- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \cite{ref7}
- incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis \cite{ref4}
- nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\cite{ref3}
- 
- \setlength{\parindent}{8em}rtetrertetreret
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+ incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 %end of the tag just like </html>
-\begin{thebibliography}{99}
-
-  \bibitem{ref1}R. H. Stulen and D. W. Sweeney, "Extreme ultraviolet lithography," in IEEE Journal of Quantum Electronics, 
-        vol. 35, no. 5, pp. 694-699, doi: 10.1109/3.760315.
-  
-  \bibitem{ref2}P. Tao et al., "Photoresist for Extreme Ultraviolet Lithography,"  (IWAPS), 2020, pp. 1-4, 
-       doi: 10.1109/IWAPS51164.2020.9286794.
-  
-  \bibitem{ref3}H. Komori et al., "Laser produced plasma light source for HVM-EUVL," 2007 Digest of papers 
-       Microprocesses and Nanotechnology, pp. 30-31, doi: 10.1109/IMNC.2007.4456089.
-  
-  \bibitem{ref4}EUV lithography finally ready for chip manufacturing. IEEE Spectrum. January 05, 2018
-  
-  \bibitem{ref5}ASML https://www.asml.com/en/products/euv-lithography-systems      
-  
-  \bibitem{ref6}Mojarad, N., Gobrecht, J. \& Ekinci, Y. Beyond EUV lithography: a comparative study of efficient photoresists' performance. Sci Rep 5, 9235
-  
-  \bibitem{ref7}Fan, D., Wang, L. \& Ekinci, Y. Nanolithography using Bessel Beams of Extreme Ultraviolet Wavelength. Sci Rep 6,31301 (2016).
-  
-  \bibitem{ref8}Samsung 5 nm and 4 nm Update: https://fuse.wikichip.org/news/2823/samsung-5-nm-and-4-nm-update/
-  
-  \bibitem{ref9}S. Yu, "Neuro-inspired computing with emerging nonvolatile memorys," in Proceedings of the IEEE, vol. 106, no. 2, pp. 260-285, Feb. 2018, doi: 10.1109/JPROC.2018.2790840.
-  
-  \end{thebibliography}
 \end{document}
